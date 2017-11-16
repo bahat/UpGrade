@@ -14,15 +14,16 @@
         <asp:TextBox ID="SchoolName" runat="server" placeholder="SchoolName"></asp:TextBox><br />
         <asp:TextBox ID="UserName" runat="server" placeholder="UserName"></asp:TextBox><br />
         <asp:TextBox ID="Password" runat="server" placeholder="Password" type="password"></asp:TextBox>
-        <asp:RadioButtonList ID="TeacherOrStudent" runat="server">
+        <asp:RadioButtonList ID="TeacherOrStudent"  runat="server">
             <asp:ListItem ID="Teacher" runat="server">Teacher</asp:ListItem>
-            <asp:ListItem ID="Student" runat="server">Student</asp:ListItem>
+            <asp:ListItem ID="Students" runat="server">Students</asp:ListItem>
             <asp:ListItem ID="Admin" runat="server">Admin</asp:ListItem>
         </asp:RadioButtonList>
-        <asp:Button ID="Submit" runat="server" Text="Login" />
+        <asp:Button ID="Button1" OnClick="LoginAccount" runat="server"  Text="Button" />
         <div>
-            
+
         </div>
+
     </form>
 </body>
 </html>
