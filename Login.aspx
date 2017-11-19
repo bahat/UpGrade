@@ -22,7 +22,6 @@
                 <input id="Admin" runat="server" type="radio" name="AccountType" value="Admin"  />
                 <label class="accountType Admin"for="Admin" title="Admin Account"></label>
             </div>    
-
             <asp:Button ID="LoginButton" OnClick="LoginAccount" runat="server"  Text="Login" />
 
         </div>

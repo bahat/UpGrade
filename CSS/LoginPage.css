@@ -18,7 +18,7 @@ body {
 h1 { /*styling UpGrade Logo*/
     padding-left:3%;
      color: #eff4fd;
-     font-size:5em;
+     font-size:4em;
 }
 
 /*firstLogo and secondLogo are two spans in the h1 
@@ -45,14 +45,14 @@ h1 { /*styling UpGrade Logo*/
     margin-bottom: 1%;
     background-color: #5a86d5;
     color: white;
-    font-size: 2.5em;
+    font-size: 2em;
     background-image: url('file:///C:\Users\Omer\Downloads\user-name.svg');
     border: 0.1em solid white;
     border-radius: 0.3em;
     padding-left: 2.1em;
     padding-bottom: 0.2em;
     padding-top: 0.2em;
-    background-size: 1.5em;
+    background-size: 1.2em;
     background-repeat: no-repeat;
     background-position: 0.2em, 0.3em
 }
@@ -85,31 +85,33 @@ h1 { /*styling UpGrade Logo*/
 }
 
 .Student {
-    background-image: url('../Photos/StudentAccountLogin.svg');
-}
-
-.Teacher {
-    background-image: url('../Photos/TeacherAccountLogin.svg');
-}
-
-.Admin {
-    background-image: url('../Photos/AdminAccountLogin.svg');
-}
-#Student:checked + .accountType {
     background-image: url('../Photos/StudentAccountSelectedLogin.svg');
 }
 
-#Teacher:checked + .accountType {
+.Teacher {
     background-image: url('../Photos/TeacherAccountSelectedLogin.svg');
 }
 
-.Admin:checked + .accountType {
+.Admin {
     background-image: url('../Photos/AdminAccountSelectedLogin.svg');
+}
+#Student:checked + .accountType {
+    background-image: url('../Photos/StudentAccountLogin.svg');
+}
+
+#Teacher:checked + .accountType {
+    background-image: url('../Photos/TeacherAccountLogin.svg');
+}
+
+#Admin:checked + .accountType {
+    background-image: url('../Photos/AdminAccountLogin.svg');
 }
 
 input:checked + .accountType {
     width: 110px;
     height: 80px;
+    transition: 0.5s;
+    
 }
 
 
@@ -122,4 +124,19 @@ input:checked + .accountType {
     width: 100px;
     height: 70px;
 
+}
+
+#LoginButton {
+    position: absolute;
+    right: 30%;
+    bottom: 15%;
+    font-size: 1.7em;
+    background-color: #5a86d5;
+    color: #eff4fd;
+    border:none;
+    padding: 1px, 1px, 0, 0;
+    border-top: 3px solid #eff4fd;
+    border-left: 3px solid #eff4fd;
+    border-top-left-radius: 5px;
+    cursor:pointer;
 }
