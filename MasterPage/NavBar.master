@@ -15,11 +15,12 @@
         <div id="SideNavBar">
             <input type="checkbox" id="toggle">
             <div>
-              <label for="toggle">&#9776;</label>
+              <label for="toggle" id="littleWeirdSign">&#9776;</label>
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#" >Class Events</a></li>
+                <li><a href="#">Time Table</a></li>
+                <li><a href="#">Grades</a></li>
+                <li><a href="#">PhoneBook</a></li>
                 <li></li>
               </ul>
             </div>

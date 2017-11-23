@@ -28,6 +28,8 @@ h1 { /*styling UpGrade Logo*/
 }
 #secondLogo{
     font-weight:600;
+    /*color:cornflowerblue;
+    background-color:#eff4fd;*/
 }
 
 .LoginBlock {
@@ -126,9 +128,9 @@ input:checked + .accountType {
 
 }
 
-    .accountType:hover {
+    /*.accountType:hover {
         background-color:#6d8ec6;
-    }
+    }*/
 
 #LoginButton {
     position: absolute;

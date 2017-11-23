@@ -6,12 +6,15 @@
 #toggle {
     display: none;
 }
+label {
+    color: cornflowerblue;
+}
 
 label {
-    font-size: 30px;
+    font-size: 1.9em;
     position: fixed;
-    left: 20px;
-    top: 20px;
+    left: 1.5%;
+    top: 3%;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -19,21 +22,25 @@ label {
 ul {
     list-style: none;
     background: #333;
-    width: 180px;
+    width: 15%;
     padding-top: 30px;
     position: fixed;
     height: 100%;
-    left: -180px;
+    left: -15%;
     transition: 0.5s;
 }
 
-li {
+li{
     color: rgba(255,255,255,0.7);
     margin: 20px;
     text-transform: capitalize;
     font-family: helvetica;
     text-align: right;
     cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color:white;
 }
 
     li:hover {
@@ -49,5 +56,5 @@ li {
 }
 
 label:hover {
-    color: gray;
+    color: #8baae1;
 }

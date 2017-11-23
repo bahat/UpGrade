@@ -34,5 +34,6 @@ public partial class Login : System.Web.UI.Page
         //    //{
         //    //    Response.Redirect("http://www.bing.com");
         //    //}
+        Response.Redirect("Home.aspx");
     }
 }
