@@ -5,13 +5,26 @@
 <html>
 <head runat="server">
     <title></title>
+    <link href="../CSS/SideNavBar.css" rel="stylesheet" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1>you're gay</h1>
+        <div id="SideNavBar">
+            <input type="checkbox" id="toggle">
+            <div>
+              <label for="toggle">&#9776;</label>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+
+        </div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
