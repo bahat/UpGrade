@@ -3,24 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UpGrade", "..\..\..\Dropbox\school\UpGrade\", "{EFE248E2-3F15-4AE6-A1A4-50E177A16594}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UpGrade", ".", "{EFE248E2-3F15-4AE6-A1A4-50E177A16594}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_56099"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Dropbox\school\UpGrade\"
+		Debug.AspNetCompiler.PhysicalPath = "..\UpGrade\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56099\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_56099"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\Dropbox\school\UpGrade\"
+		Release.AspNetCompiler.PhysicalPath = "..\UpGrade\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56099\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "56099"
+		SlnRelativePath = "..\UpGrade\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject

@@ -11,25 +11,26 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <div id="SideNavBar">
-            <input type="checkbox" id="toggle">
-            <div>
-              <label for="toggle" id="littleWeirdSign">&#9776;</label>
-              <ul>
-                <li><a href="#" >Class Events</a></li>
-                <li><a href="#">Time Table</a></li>
-                <li><a href="#">Grades</a></li>
-                <li><a href="#">PhoneBook</a></li>
-                <li><a href="#">Messages</a></li>
-              </ul>
+        <div>
+            <div id="SideNavBar">
+                <input type="checkbox" id="toggle">
+                <div>
+                    <label for="toggle" id="littleWeirdSign">&#9776;</label>
+                    <ul>
+                        <li><a href="#">Class Events</a></li>
+                        <li><a href="#">Time Table</a></li>
+                        <li><a href="#">Grades</a></li>
+                        <li><a href="#">PhoneBook</a></li>
+                        <li><a href="#">Messages</a></li>
+                    </ul>
+                </div>
             </div>
+            <div id="topLeftMenu">
 
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
     </form>
 </body>
 </html>
