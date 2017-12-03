@@ -11,9 +11,9 @@
     <form id="form1" runat="server">
         <h1><span id="firstLogo">Up</span><span id="secondLogo">Grade</span></h1>
         <div class="LoginBlock">
-            <asp:TextBox ID="SchoolName" class="textFields" runat="server" placeholder="School Name"></asp:TextBox><br />
-            <asp:TextBox ID="UserName" class="textFields" runat="server" placeholder="Username"></asp:TextBox><br />
-            <asp:TextBox ID="Password" class="textFields" runat="server" placeholder="Password" type="password"></asp:TextBox>
+            <asp:TextBox ID="SchoolName" class="textFields" runat="server" autocomplete="off" placeholder="School Name"></asp:TextBox><br />
+            <asp:TextBox ID="UserName" class="textFields" runat="server" autocomplete="off" placeholder="Username"></asp:TextBox><br />
+            <asp:TextBox ID="Password" class="textFields" runat="server" autocomplete="off" placeholder="Password" type="password"></asp:TextBox>
             <div class="accountTypeSelector">
                 <input id="Student" runat="server" type="radio" name="AccountType" value="Student"  />
                 <label class="accountType Student" for="Student" title="Student Account"></label>

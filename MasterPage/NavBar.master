@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <link href="../CSS/SideNavBar.css" rel="stylesheet" />
+    <link href="../CSS/DropdownUserRight.css" rel="stylesheet" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -16,20 +17,27 @@
                 <input type="checkbox" id="toggle">
                 <div>
                     <label for="toggle" id="littleWeirdSign">&#9776;</label>
-                    <ul>
-                        <li><a href="#">Class Events</a></li>
-                        <li><a href="#">Time Table</a></li>
-                        <li><a href="#">Grades</a></li>
-                        <li><a href="#">PhoneBook</a></li>
-                        <li><a href="#">Messages</a></li>
+                    <ul id="ulside">
+                        <li class="liElements"><a href="#" class="ulLinks">Class Events</a></li>
+                        <li class="liElements"><a href="#" class="ulLinks">Time Table</a></li>
+                        <li class="liElements"><a href="#" class="ulLinks">Grades</a></li>
+                        <li class="liElements"><a href="#" class="ulLinks">PhoneBook</a></li>
+                        <li class="liElements"><a href="#" class="ulLinks">Messages</a></li>
                     </ul>
                 </div>
             </div>
-            <div id="topLeftMenu">
+            <div id="topRightDropdownMenu">
+                <a href="#" class="dropbtn">Welcome, </a>
+                <div class="dropdown-content">
+                <a href="#">Account Settings</a>
+                <a href="#">Sign Out</a>
+                </div>
+                
 
             </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+
         </div>
     </form>
 </body>

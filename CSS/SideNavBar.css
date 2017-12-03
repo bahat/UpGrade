@@ -19,7 +19,7 @@ label {
     cursor: pointer;
 }
 
-ul {
+#ulside {
     list-style: none;
     background: #333;
     width: 15%;
@@ -30,7 +30,7 @@ ul {
     transition: 0.5s;
 }
 
-li{
+.liElements{
     color: rgba(255,255,255,0.7);
     margin: 20px;
     text-transform: capitalize;
@@ -38,14 +38,14 @@ li{
     text-align: right;
     cursor: pointer;
 }
-a {
+.ulLinks{
     text-decoration: none;
     color:white;
 }
 
-    li:hover {
-        color: rgba(255,255,255,1);
-    }
+.liElements:hover {
+    color: rgba(255,255,255,1);
+}
 
 #toggle:checked + div ul {
     left: 0;
