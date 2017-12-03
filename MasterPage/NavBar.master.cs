@@ -10,5 +10,6 @@ public partial class NavBar : System.Web.UI.MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
 
+        WelcomeRight.InnerText = "Welcome, "+ Session["Name"];
     }
 }

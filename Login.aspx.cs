@@ -34,6 +34,7 @@ public partial class Login : System.Web.UI.Page
         //    //{
         //    //    Response.Redirect("http://www.bing.com");
         //    //}
+        Session["Name"] = UserName.Text;
         Response.Redirect("Home.aspx");
     }
 }
