@@ -12,4 +12,8 @@ public partial class NavBar : System.Web.UI.MasterPage
 
         WelcomeRight.InnerText = "Welcome, "+ Session["Name"];
     }
+    protected void SignOut(object sender, EventArgs e)
+    {
+        Session.Abandon();
+    }
 }

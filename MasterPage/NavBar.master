@@ -30,7 +30,7 @@
                 <a runat="server" id="WelcomeRight" href="#" class="dropbtn">Welcome, </a>
                 <div class="dropdown-content">
                 <a href="#">Account Settings</a>
-                <a href="../Login.aspx" id="signoutlink">Sign Out</a>
+                <a href="~/Login.aspx" runat="server" onClick="SignOut" id="signoutlink">Sign Out</a>
                 </div>
                 
 
