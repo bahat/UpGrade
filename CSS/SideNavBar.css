@@ -21,7 +21,7 @@ label {
 
 #ulside {
     list-style: none;
-    background: #333;
+    background: #8baae1; /*#5873a3;*/
     width: 15%;
     padding-top: 30px;
     position: fixed;
@@ -37,14 +37,22 @@ label {
     font-family: helvetica;
     text-align: right;
     cursor: pointer;
+    display:block;
 }
 .ulLinks{
     text-decoration: none;
     color:white;
 }
 
-.liElements:hover {
-    color: rgba(255,255,255,1);
+
+.liElements a:hover{
+    color: #eaeaea;
+    transition:0.3s;
+    
+
+}
+a{
+    font-family:'Raleway', sans-serif;
 }
 
 #toggle:checked + div ul {
