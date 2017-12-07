@@ -72,7 +72,7 @@ h1 { /*styling UpGrade Logo*/
 /*start of radio image buttons for account type*/
 .accountTypeSelector{
     margin-left:2%;
-    padding-top:2%;
+    padding-top:5%;
     padding-bottom:2%;
 }
 
@@ -88,14 +88,17 @@ h1 { /*styling UpGrade Logo*/
 
 .Student {
     background-image: url('../Photos/StudentAccountSelectedLogin.svg');
+    transition:0.5s;
 }
 
 .Teacher {
     background-image: url('../Photos/TeacherAccountSelectedLogin.svg');
+    transition: 0.5s;
 }
 
 .Admin {
     background-image: url('../Photos/AdminAccountSelectedLogin.svg');
+    transition: 0.5s;
 }
 #Student:checked + .accountType {
     background-image: url('../Photos/StudentAccountLogin.svg');
@@ -135,7 +138,7 @@ input:checked + .accountType {
 #LoginButton {
     position: absolute;
     right: 30%;
-    bottom: 15%;
+    bottom: 23%;
     font-size: 1.7em;
     background-color: #5a86d5;
     color: #eff4fd;
