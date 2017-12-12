@@ -23,7 +23,7 @@
                 <label class="accountType Admin"for="Admin" title="Admin Account"></label>
             </div>    
             <asp:Button ID="LoginButton" OnClick="LoginAccount" runat="server"  Text="Login" />
-
+            <asp:Button ID="testbutton" OnClick="testbutton_Click" runat="server" Text="test" />
         </div>
         <div>
 
