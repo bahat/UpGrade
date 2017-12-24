@@ -135,7 +135,7 @@ input:checked + .accountType {
         background-color:#6d8ec6;
     }*/
 
-#LoginButton {
+    .button{
     position: absolute;
     right: 30%;
     bottom: 23%;
@@ -149,8 +149,14 @@ input:checked + .accountType {
     border-top-left-radius: 5px;
     cursor:pointer;
 }
-    #LoginButton:hover {
+    .button:hover {
         background-color: #8baae1;
         border-radius: 5px;
-        transition:0.5s;
+        transition: 0.5s;
     }
+    #testbutton{
+        bottom: 30%;
+        font-size:1em;
+    }
+
+

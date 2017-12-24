@@ -9,8 +9,11 @@ public partial class NavBar : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
-        WelcomeRight.InnerText = "Welcome, "+ Session["Name"];
+        if (Session["FirstName"] == null)
+        {
+            Response.Redirect("~/Login.aspx");
+        }
+        WelcomeRight.InnerText = "Welcome, "+ Session["FirstName"];
     }
     protected void SignOut(object sender, EventArgs e)
     {

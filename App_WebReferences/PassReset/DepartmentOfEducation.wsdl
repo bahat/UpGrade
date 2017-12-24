@@ -5,7 +5,7 @@
       <s:element name="SendIt">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="idstr" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -13,6 +13,30 @@
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="SendItResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckForInternetConnection">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckForInternetConnectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckForInternetConnectionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="idExistInDatabase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="idExistInDatabaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idExistInDatabaseResult" type="s:boolean" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -24,10 +48,30 @@
   <wsdl:message name="SendItSoapOut">
     <wsdl:part name="parameters" element="tns:SendItResponse" />
   </wsdl:message>
+  <wsdl:message name="CheckForInternetConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckForInternetConnection" />
+  </wsdl:message>
+  <wsdl:message name="CheckForInternetConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckForInternetConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="idExistInDatabaseSoapIn">
+    <wsdl:part name="parameters" element="tns:idExistInDatabase" />
+  </wsdl:message>
+  <wsdl:message name="idExistInDatabaseSoapOut">
+    <wsdl:part name="parameters" element="tns:idExistInDatabaseResponse" />
+  </wsdl:message>
   <wsdl:portType name="DepartmentOfEducationSoap">
     <wsdl:operation name="SendIt">
       <wsdl:input message="tns:SendItSoapIn" />
       <wsdl:output message="tns:SendItSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckForInternetConnection">
+      <wsdl:input message="tns:CheckForInternetConnectionSoapIn" />
+      <wsdl:output message="tns:CheckForInternetConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="idExistInDatabase">
+      <wsdl:input message="tns:idExistInDatabaseSoapIn" />
+      <wsdl:output message="tns:idExistInDatabaseSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="DepartmentOfEducationSoap" type="tns:DepartmentOfEducationSoap">
@@ -41,11 +85,47 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="CheckForInternetConnection">
+      <soap:operation soapAction="http://tempuri.org/CheckForInternetConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="idExistInDatabase">
+      <soap:operation soapAction="http://tempuri.org/idExistInDatabase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="DepartmentOfEducationSoap12" type="tns:DepartmentOfEducationSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="SendIt">
       <soap12:operation soapAction="http://tempuri.org/SendIt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckForInternetConnection">
+      <soap12:operation soapAction="http://tempuri.org/CheckForInternetConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="idExistInDatabase">
+      <soap12:operation soapAction="http://tempuri.org/idExistInDatabase" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

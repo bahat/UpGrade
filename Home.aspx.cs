@@ -9,8 +9,6 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["Name"] == null)
-            Response.Redirect("Login.aspx");
-        Response.Write("<script>alert('Welcome " + Session["Name"] + "');</script>");
+        
     }
 }

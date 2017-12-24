@@ -6,12 +6,14 @@
 <head runat="server">
     <title>Login</title>
     <link href="CSS/LoginPage.css" rel="stylesheet" />
+    <script src="JS/functions.js" type="text/javascript"></script>
+
 </head>
 <body>
+    
     <form id="form1" runat="server">
         <h1><span id="firstLogo">Up</span><span id="secondLogo">Grade</span></h1>
         <div class="LoginBlock">
-<%--            <asp:TextBox ID="SchoolName" class="textFields" runat="server" autocomplete="off" placeholder="School Name"></asp:TextBox><br />--%>
             <asp:TextBox ID="UserName" class="textFields" runat="server" autocomplete="off" placeholder="ID"></asp:TextBox><br />
             <asp:TextBox ID="Password" class="textFields" runat="server" autocomplete="off" placeholder="Password" type="password"></asp:TextBox>
             <div class="accountTypeSelector">
@@ -22,8 +24,10 @@
                 <input id="Admin" runat="server" type="radio" name="AccountType" value="Admin"  />
                 <label class="accountType Admin"for="Admin" title="Admin Account"></label>
             </div>    
-            <asp:Button ID="LoginButton" OnClick="LoginAccount" runat="server"  Text="Login" />
-            <asp:Button ID="testbutton" OnClick="testbutton_Click" runat="server" Text="test" />
+
+        <asp:Button class="button" ID="LoginButton" OnClick="LoginAccount" runat="server"  Text="Login" />
+        <asp:Button class="button" onclick="forgotPass" id="testbutton" display="none" runat="server" text="Forgot Password?" />
+
         </div>
         <div>
 
